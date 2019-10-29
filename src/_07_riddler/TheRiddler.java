@@ -15,19 +15,22 @@ public class TheRiddler {
 		int score = 0;
 		String ans = JOptionPane.showInputDialog("Hey! What is the square root of 4?");
 		
-		String ans2 = JOptionPane.showInputDialog("What is the square root of 16?");
-		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
-		// 4. If they got the answer right, pop up "correct!" and increase the score by one
 		if(ans.equals("2")) {
+			JOptionPane.showMessageDialog(null, "Correct! It was 2 as the mathmatical equations have proven it as correct.");
 			score=score+1;
 		}
 		else { JOptionPane.showMessageDialog(null, "Wrong! It was actually 2!");
 			score=score-1;
 		}
+		String ans2 = JOptionPane.showInputDialog("What is the square root of 16?");
+		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
+		// 4. If they got the answer right, pop up "correct!" and increase the score by one
+		
 		if(ans2.equals("4")) {
+			JOptionPane.showMessageDialog(null, "Correct! It was 4 as the mathmatical equations have proven it as correct.");
 			score=score+1;
 		}
-		else {JOptionPane.showMessageDialog(null, "Wrong! It was actually 16!");
+		else {JOptionPane.showMessageDialog(null, "Wrong! It was actually 4! noob.");
 			score=score-1;
 		}
 		// 5. Otherwise, say "wrong" and tell them the answer
